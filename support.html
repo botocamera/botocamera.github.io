@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boto Camera — Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+    color: #1a1a1a;
+    background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #14161a; }
+    a { color: #6fb3ff; }
+    .nav { border-color: #2a2d34; }
+    .btn { background: #2563eb; }
+  }
+  h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.25rem; }
+  h3 { font-size: 1.02rem; margin-top: 1.6rem; margin-bottom: 0.2rem; }
+  .lede { color: #555; }
+  @media (prefers-color-scheme: dark) { .lede { color: #aaa; } }
+  ul { padding-left: 1.25rem; }
+  li { margin-bottom: 0.4rem; }
+  .btn {
+    display: inline-block; margin: 8px 0 4px;
+    background: #2563eb; color: #fff; text-decoration: none;
+    padding: 10px 18px; border-radius: 8px; font-weight: 600;
+  }
+  .nav { margin-top: 56px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 0.9rem; color: #888; }
+</style>
+</head>
+<body>
+
+<h1>Boto Camera — Support</h1>
+<p class="lede">Need help with Boto? You're in the right place.</p>
+
+<h2>Get in touch</h2>
+<p>The fastest way to reach us is by raising a support request:</p>
+<p><a class="btn" href="https://forms.gle/huZt7ssiDjeF3QoB7" target="_blank" rel="noopener">Submit a support request</a></p>
+<p>When you write in, please include:</p>
+<ul>
+  <li>Your iPhone model (e.g. "iPhone 15 Pro")</li>
+  <li>The iOS version you're running (e.g. "iOS 18.4")</li>
+  <li>The Boto version (see <em>Settings → About → Version</em>)</li>
+  <li>A short description of what you were doing and what happened</li>
+</ul>
+<p>We typically reply within a few business days.</p>
+
+<h2>Common questions</h2>
+
+<h3>The camera screen says "Camera access needed."</h3>
+<p>Boto needs camera permission to capture photos. Open iOS Settings → Boto Camera → toggle Camera on, then re-open Boto.</p>
+
+<h3>My photos aren't appearing in the iOS Photos app.</h3>
+<p>Open iOS Settings → Boto Camera → Photos → choose either "Add Only" or "Full Access". Boto only needs Add Only. Photos you've already taken before granting access stay in the app's Gallery — only new captures get added to Photos.</p>
+
+<h3>The Templates tab shows "Catalog unavailable" or "You're offline."</h3>
+<p>Boto fetches its newest templates from a public CDN. If you're offline (or the CDN is briefly unreachable), the app uses the built-in template set that ships with the app. Everything still works — you just don't see the very latest additions. Reopen the app once you're back online and the catalog refreshes automatically.</p>
+
+<h3>How do I delete a template I created?</h3>
+<p>Templates tab → tap <em>My Templates</em> → long-press a template → Delete Template. To wipe all of them at once: Settings → Templates → Reset user templates.</p>
+
+<h3>How do I free up storage?</h3>
+<p>Settings shows total photo storage used. To clear remote template image cache: Settings → Storage → Clear remote template cache. To delete individual photos: Gallery → tap a photo → Trash icon.</p>
+
+<h3>Will my photos sync between devices?</h3>
+<p>No. Boto stores photos on the device that captured them. If you saved them to your iOS Photos library (the default), those are synced by iCloud Photos like any other photo.</p>
+
+<h3>How do I report a bug or suggest a feature?</h3>
+<p>Raise a <a href="https://forms.gle/huZt7ssiDjeF3QoB7" target="_blank" rel="noopener">request</a> with the details listed above. Bug reports including the steps to reproduce help us fix things quickly.</p>
+
+<h2>Privacy</h2>
+<p>Boto does not collect, store, or transmit any personal information. See the <a href="privacy.html">Privacy Policy</a> for the full breakdown.</p>
+
+<p class="nav">Support · <a href="privacy.html">Privacy Policy</a></p>
+
+</body>
+</html>
