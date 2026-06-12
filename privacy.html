@@ -28,6 +28,8 @@
   ul { padding-left: 1.25rem; }
   li { margin-bottom: 0.5rem; }
   .lede strong { font-size: 1.05em; }
+  .cols { columns: 2; column-gap: 32px; }
+  @media (max-width: 480px) { .cols { columns: 1; } }
   .nav { margin-top: 56px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 0.9rem; color: #888; }
 </style>
 </head>
@@ -51,6 +53,24 @@
 <p><strong>Nothing.</strong> Boto does not have user accounts, does not collect, transmit, share, or sell any personal information, and does not maintain a server-side database of users.</p>
 <p>We do not use any analytics SDKs, advertising SDKs, crash reporters, or any third-party tracking libraries.</p>
 
+<h2>Data Not Collected</h2>
+<p>Boto does not collect any of the following data types:</p>
+<ul class="cols">
+  <li>Contact info</li>
+  <li>Health &amp; fitness</li>
+  <li>Financial info</li>
+  <li>Location</li>
+  <li>Sensitive info</li>
+  <li>Contacts</li>
+  <li>User content</li>
+  <li>Browsing history</li>
+  <li>Search history</li>
+  <li>Identifiers</li>
+  <li>Purchases</li>
+  <li>Usage data</li>
+  <li>Diagnostics</li>
+</ul>
+
 <h2>What stays on your device</h2>
 <p>Everything Boto creates is stored locally on your iPhone:</p>
 <ul>
@@ -61,6 +81,9 @@
 </ul>
 <p>None of this is transmitted off your device. Uninstalling Boto removes all of it.</p>
 
+<h2>Data Retention</h2>
+<p>Because Boto does not collect or store user data on any server, there is no personal information for us to retain. Content stored locally on your device remains entirely under your control and is permanently removed when you delete the app.</p>
+
 <h2>Network requests Boto makes</h2>
 <p>Boto makes outbound HTTPS requests to a public content delivery network (CDN) — currently <code>cdn.jsdelivr.net</code> — to fetch the following:</p>
 <ul>
@@ -68,8 +91,8 @@
   <li><strong>Template sample images</strong> referenced by the catalog. These are JPG/PNG files cached locally so they don't need to be re-downloaded.</li>
   <li>(Occasionally) an <strong>optional announcement image</strong> if a publisher announcement is active.</li>
 </ul>
-<p>These requests carry no identifiers, no query parameters about you, no request body, and no custom headers. The CDN sees the IP address that is inherent in any HTTP request — Boto does not log, retain, link, or otherwise use this. The CDN's own data practices are governed by its operator (jsDelivr); refer to their privacy policy for details.</p>
-<p>We do not provide any way for a remote announcement to track who saw or dismissed it.</p>
+<p>These requests carry no identifiers, no query parameters about you, no request body, and no custom headers. The CDN sees the IP address that is inherent in any HTTP request. Boto does not collect, store, process, or associate IP addresses with users — any IP address processing occurs solely by the CDN provider as part of standard internet communications. The CDN's own data practices are governed by its operator (jsDelivr); refer to their privacy policy for details.</p>
+<p>Announcement images are static image files. They contain no analytics, tracking pixels, cookies, unique identifiers, or user-specific content, and we provide no way for a remote announcement to track who saw or dismissed it.</p>
 
 <h2>Children</h2>
 <p>Boto is not directed at children under 13 and does not knowingly collect data from anyone. The app's features are general-purpose photo capture.</p>
