@@ -91,7 +91,7 @@
   <li><strong>Template sample images</strong> referenced by the catalog. These are JPG/PNG files cached locally so they don't need to be re-downloaded.</li>
   <li>(Occasionally) an <strong>optional announcement image</strong> if a publisher announcement is active.</li>
 </ul>
-<p>These requests carry no identifiers, no query parameters about you, no request body, and no custom headers. The CDN sees the IP address that is inherent in any HTTP request. Boto does not collect, store, process, or associate IP addresses with users — any IP address processing occurs solely by the CDN provider as part of standard internet communications. The CDN's own data practices are governed by its operator (jsDelivr); refer to their privacy policy for details.</p>
+<p>These requests carry no identifiers, no query parameters about you, no request body, and no custom headers. As with any internet connection, the CDN necessarily sees the IP address your device connects from — this is required to route the response back to you and is inherent to how the internet works. Boto does not collect, store, process, or associate IP addresses with users; any IP address handling occurs solely by the CDN provider (jsDelivr) as part of standard internet communications, governed by their own privacy policy.</p>
 <p>Announcement images are static image files. They contain no analytics, tracking pixels, cookies, unique identifiers, or user-specific content, and we provide no way for a remote announcement to track who saw or dismissed it.</p>
 
 <h2>Children</h2>
